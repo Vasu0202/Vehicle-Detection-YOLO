@@ -27,46 +27,6 @@ Install dependencies:
 pip install -r requirements.txt
 
 
-Download the VEDAI dataset from Kaggle and place it in data/.
-
-Place the trained model weights (best.pt) in models/. Pre-trained weights (yolov10s.pt) are available in models/.
-
-
-Usage
-
-Preprocess the dataset and train the model:
-jupyter notebook src/preprocess.ipynb
-
-Follow the notebook to convert COCO annotations and train YOLOv10s.
-
-Run inference on a sample image:
-python src/detect.py
-
-Outputs are saved in outputs/.
-
-
-Project Structure
-Vehicle-Detection-YOLO/
-├── src/                  # Source code
-│   ├── preprocess.ipynb  # Data preprocessing and training
-│   └── detect.py         # Inference script
-├── data/                 # Dataset files
-│   ├── vedai.yaml        # Dataset configuration
-│   ├── train/            # Training images and labels
-│   └── val/              # Validation images and labels
-├── models/               # Model weights
-│   ├── yolov10s.pt       # Pre-trained weights
-│   └── best.pt           # Trained model
-├── outputs/              # Results
-│   ├── runs/             # Training logs
-│   └── sample_output.jpg # Example detection
-├── docs/                 # Documentation
-│   ├── report.pdf        # Project report
-│   └── screenshot.png    # Detection screenshot
-├── requirements.txt      # Dependencies
-├── README.md             # This file
-└── LICENSE               # MIT License
-
 Results
 
 Trained YOLOv10s for 300 epochs, achieving:
@@ -76,17 +36,3 @@ mAP50: 0.995
 mAP50:95: 0.979
 
 
-Speed: 5.3ms inference per image on Tesla P100 GPU.
-
-Screenshots
-Contributions
-
-Preprocessed VEDAI dataset from COCO to YOLO format.
-Trained YOLOv10s model with high accuracy.
-Developed inference script for real-time detection.
-Documented project for reproducibility.
-
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
-Contact
-Reach out via [your-email@example.com] or [LinkedIn profile URL] for questions or collaboration.
