@@ -19,7 +19,7 @@ Tools: Git, Jupyter Notebook
 Installation
 
 Clone the repository:
-git clone https://github.com/your-username/Vehicle-Detection-YOLO.git
+git clone https://github.com/Vasu0202/Vehicle-Detection-YOLO.git
 cd Vehicle-Detection-YOLO
 
 
