@@ -29,10 +29,10 @@ pip install -r requirements.txt
 
 Results
 
-Trained YOLOv10s for 300 epochs, achieving:
-Precision: 0.942
-Recall: 0.989
-mAP50: 0.995
-mAP50:95: 0.979
+- Trained YOLOv10s for 300 epochs on the VEDAI dataset, achieving:
+  - Precision: 95.7%
+  - Recall: 99.4%
+  - mAP@50: 99.5%
+  - mAP@50:95: 97.6%
 
 
